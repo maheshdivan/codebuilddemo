@@ -13,7 +13,7 @@ phases:
       - echo Build completed on `date`
       - pwd
       - ls -al
-      _ cat *.yaml
+      - cat *.yaml
 artifacts:
   files:
     - '**/*'
