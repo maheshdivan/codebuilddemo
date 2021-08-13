@@ -12,7 +12,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - pwd
-      - ls -al | grep .zip
+      - ls -al
+      _ cat *.yaml
 artifacts:
   files:
     - '**/*'
