@@ -8,9 +8,13 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Python code...
       - pip install requests -t .
+      - pip install coverage
+      - coverage run -m unittest discover
   post_build:
     commands:
       - echo Build completed on `date`
+      - echo 'Connect to CodeCov'
+      - bash my_script.sh
       - pwd
       - ls -al
 artifacts:
