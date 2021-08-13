@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - pwd
-      - ls -al
+      - ls -al | grep .zip
 artifacts:
   files:
     - '**/*'
